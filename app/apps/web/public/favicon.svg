@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#ffffff" stroke="#1e40af" stroke-width="3"/>
+  
+  <!-- Soccer ball pentagon and hexagon pattern -->
+  <g fill="none" stroke="#1e40af" stroke-width="2.5">
+    <!-- Center pentagon -->
+    <polygon points="100,60 120,75 115,100 85,100 80,75" fill="#1e40af" stroke="none"/>
+    
+    <!-- Top hexagons -->
+    <polygon points="100,60 120,75 135,65 140,85 120,95 100,85"/>
+    <polygon points="100,60 80,75 65,65 60,85 80,95 100,85"/>
+    
+    <!-- Middle hexagons -->
+    <polygon points="120,95 140,85 155,100 145,120 125,125 115,100"/>
+    <polygon points="80,95 60,85 45,100 55,120 75,125 85,100"/>
+    
+    <!-- Bottom hexagons -->
+    <polygon points="115,100 125,125 110,145 90,145 75,125 85,100"/>
+    
+    <!-- Additional pattern elements -->
+    <polygon points="100,85 120,95 125,125 110,145 90,145 75,125 80,95"/>
+  </g>
+  
+  <!-- Simplified soccer ball design -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Pentagon in center -->
+  <polygon points="100,50 130,70 120,105 80,105 70,70" fill="#1e40af" opacity="0.8"/>
+  
+  <!-- Hexagon pattern around -->
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#1e40af" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Yellow accent (Colombia colors) -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.5"/>
+</svg>
