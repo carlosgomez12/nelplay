@@ -8,7 +8,6 @@ import { Trophy, Target, Zap, CheckCircle2, ArrowRight, Calendar, Users, Sparkle
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import PrizesCard from '@/components/PrizesCard.jsx';
-import PromoAnnouncer from '@/components/PromoAnnouncer.jsx';
 
 const HomePage = () => {
   const { isAuthenticated, isInscriptionApproved } = useAuth();
@@ -226,9 +225,6 @@ const HomePage = () => {
 
         <Footer />
       </div>
-
-      {/* Cuchito Futbolero - asistente flotante */}
-      <PromoAnnouncer />
     </>
   );
 };
