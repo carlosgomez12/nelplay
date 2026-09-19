@@ -2,38 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nelplay.com/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1</priority>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nelplay.com/login</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
+    <loc>https://nelplay.com/sobre-nelplay</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nelplay.com/signup</loc>
-    <lastmod>2026-08-26</lastmod>
+    <loc>https://nelplay.com/ranking</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nelplay.com/password-reset</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
+    <loc>https://nelplay.com/terminos</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://nelplay.com/leaderboard</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
+    <loc>https://nelplay.com/privacidad</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://nelplay.com/amistosos</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
+    <loc>https://nelplay.com/cookies</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://nelplay.com/juego-responsable</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://nelplay.com/afiliados</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>

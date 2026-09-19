@@ -1,3 +1,14 @@
 User-agent: *
 Allow: /
+
+# Rutas privadas / de cuenta: no indexar
+Disallow: /admin
+Disallow: /login
+Disallow: /signup
+Disallow: /password-reset
+Disallow: /inscription
+Disallow: /matches
+Disallow: /my-predictions
+Disallow: /todos-los-pronosticos
+
 Sitemap: https://nelplay.com/sitemap.xml
