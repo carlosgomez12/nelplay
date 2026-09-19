@@ -7,3 +7,8 @@ dist/
 .DS_Store
 coverage/
 .vite/
+
+# PocketBase runtime binary (32MB, descargable/regenerable) y datos locales
+apps/pocketbase/pocketbase
+apps/pocketbase/pocketbase.exe
+apps/pocketbase/pb_data/

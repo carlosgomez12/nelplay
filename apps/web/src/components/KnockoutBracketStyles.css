@@ -1,0 +1,89 @@
+.bracket-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  overflow-x: auto;
+  min-height: 700px;
+  /* Hide scrollbar for cleaner look but allow scrolling */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.bracket-container::-webkit-scrollbar {
+  display: none;
+}
+
+.bracket-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 320px;
+  gap: 1.5rem;
+  position: relative;
+  flex: 1;
+}
+
+.bracket-column-header {
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid hsl(var(--border));
+  color: hsl(var(--muted-foreground));
+}
+
+.bracket-match-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Desktop Connecting Lines */
+@media (min-width: 1024px) {
+  /* Line coming out of the right side of a match */
+  .bracket-column:not(:last-child) .bracket-match-wrapper::after {
+    content: '';
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    width: 1rem;
+    height: 2px;
+    background-color: hsl(var(--border));
+    z-index: 0;
+  }
+
+  /* Vertical connecting lines for the next round */
+  .bracket-column:not(:first-child) .bracket-match-wrapper::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    width: 1rem;
+    height: 2px;
+    background-color: hsl(var(--border));
+    z-index: 0;
+  }
+
+  /* The vertical span connecting two matches */
+  .bracket-column:nth-child(2) .bracket-match-wrapper:nth-child(odd)::before {
+    height: calc(100% + 1.5rem + 2px); /* Adjust based on gap */
+    top: 50%;
+    border-left: 2px solid hsl(var(--border));
+    border-top: 2px solid hsl(var(--border));
+    border-bottom: none;
+    background: transparent;
+    width: 1rem;
+    border-top-left-radius: 0.5rem;
+  }
+  
+  /* This is a simplified visual representation. Perfect SVG lines are better for complex dynamic brackets, 
+     but CSS borders work well for fixed structures. We'll rely primarily on the clean grid layout 
+     and subtle borders to imply connection without overly complex CSS math that breaks on resize. */
+}
+
+.stage-octavos { border-top: 3px solid #3b82f6; }
+.stage-cuartos { border-top: 3px solid #8b5cf6; }
+.stage-semis { border-top: 3px solid #d946ef; }
+.stage-final { border-top: 3px solid #f59e0b; }
