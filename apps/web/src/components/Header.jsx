@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button.jsx';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar.jsx';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from '@/components/ui/dropdown-menu.jsx';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet.jsx';
-import { Menu, User, LogOut, Shield, Eye, Trophy } from 'lucide-react';
+import { Menu, User, LogOut, Shield, Eye, Trophy, Target } from 'lucide-react';
 
 const Header = () => {
   const { currentUser, isAuthenticated, isAdmin, logout } = useAuth();
@@ -79,8 +79,14 @@ const Header = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="w-56">
                   <DropdownMenuItem asChild>
-                    <Link to="/my-predictions" className="flex items-center gap-2 cursor-pointer font-medium">
+                    <Link to="/perfil" className="flex items-center gap-2 cursor-pointer font-medium">
                       <User className="w-4 h-4 text-muted-foreground" />
+                      Mi perfil
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="/my-predictions" className="flex items-center gap-2 cursor-pointer font-medium">
+                      <Target className="w-4 h-4 text-muted-foreground" />
                       Mis pronósticos
                     </Link>
                   </DropdownMenuItem>

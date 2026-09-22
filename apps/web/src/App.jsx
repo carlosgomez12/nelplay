@@ -18,6 +18,7 @@ import TodosLosPronosticosPage from '@/pages/TodosLosPronosticosPage.jsx';
 import AdminDashboard from '@/pages/AdminDashboard.jsx';
 import TodayMatchesPopup from '@/components/TodayMatchesPopup.jsx';
 import SobreNelplayPage from '@/pages/SobreNelplayPage.jsx';
+import ProfilePage from '@/pages/ProfilePage.jsx';
 import { RetosPage, LigasPage, ComunidadPage } from '@/pages/UpcomingPages.jsx';
 import { TerminosPage, PrivacidadPage, CookiesPage, JuegoResponsablePage, AfiliadosPage } from '@/pages/LegalPages.jsx';
 
@@ -49,6 +50,16 @@ function App() {
             <Route path="/cookies" element={<CookiesPage />} />
             <Route path="/juego-responsable" element={<JuegoResponsablePage />} />
             <Route path="/afiliados" element={<AfiliadosPage />} />
+
+            {/* Perfil (cualquier usuario autenticado, free-to-play) */}
+            <Route
+              path="/perfil"
+              element={
+                <ProtectedRoute>
+                  <ProfilePage />
+                </ProtectedRoute>
+              }
+            />
 
             {/* Inscripción */}
             <Route

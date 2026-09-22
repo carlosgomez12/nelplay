@@ -15,7 +15,7 @@ const BottomNav = () => {
   const items = bottomNav({ isAuthenticated, features: FEATURES });
 
   const profile = isAuthenticated
-    ? { path: '/my-predictions', label: 'Perfil', icon: User }
+    ? { path: '/perfil', label: 'Perfil', icon: User }
     : { path: '/login', label: 'Entrar', icon: User };
 
   const all = [...items, profile];
